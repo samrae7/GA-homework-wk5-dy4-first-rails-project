@@ -1,0 +1,11 @@
+<p>this page will show you a form where you can EDIT an existing record</p>
+
+<form action="/artworks/<%= @artwork.id %>" method="post">
+  
+  <input type="text" value="<%= @artwork.name %>" name = "artwork[name]">
+  <input type="text" value="<%= @artwork.artist %>" name = "artwork[artist]">
+  <input type="text" value="<%= @artwork.location %>" name = "artwork[location]">
+  <input type="text" value="<%= @artwork.likes %>" name = "artwork[likes]">
+  <input type="text" value="<%= @artwork.description %>" name="artwork[description]">
+  <input type="submit" value="Update">
+</form>

@@ -1,0 +1,12 @@
+<h2>Location: <%= @artwork.location %></h2>
+<p>Artist: <%= @artwork.artist %></p>
+<p>Description: <%= @artwork.description %></p>
+
+
+<form method='get' action="/artworks/<%= @artwork.id %>/edit">
+  <button>Edit</button>
+</form>
+
+<form method="post" action="/artworks/<%= @artwork.id %>/delete">
+  <button>Delete</button>
+</form>

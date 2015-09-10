@@ -1,0 +1,7 @@
+<% @artworks.each do |artwork| %>
+
+  <h2><a href="/artworks/<%=artwork.id%>">Location: <%=artwork.location %></a></h2>
+  <p>Artist: <%= artwork.artist %></p>
+  <p>Description: <%= artwork.description %></p>
+
+<% end %>
